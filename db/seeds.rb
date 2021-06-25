@@ -19,7 +19,7 @@ Charity.create!(name: "The Giving", url: "www.test.com", address: "8605 Neighbor
 Charity.create!(name: "The Loving", url: "www.test.com", address: "8606 Corner Store, Los Angeles, CA 90069", phone_number: "9999999992")
 Charity.create!(name: "The Hoping", url: "www.test.com", address: "8607 Block, Los Angeles, CA 90069", phone_number: "7777777773")
 
-# CartedProduct.create!(user_id: , charity_id: , frequency: "", start_date: , amount: )
-# CartedProduct.create!(user_id: , charity_id: , frequency: "", start_date: , amount: )
-# CartedProduct.create!(user_id: , charity_id: , frequency: "", start_date: , amount: )
-# CartedProduct.create!(user_id: , charity_id: , frequency: "", start_date: , amount: )
+# CartedProduct.create!(user_id: 3, charity_id: 2, frequency: "monthly", start_date: 2021-06-30, amount:75)
+# CartedProduct.create!(user_id: 2, charity_id: 4, frequency: "yearly", start_date: 2021-07-01, amount: 500)
+# CartedProduct.create!(user_id: 3, charity_id: 3, frequency: "yearly", start_date: 2021-07-05, amount: 725)
+# CartedProduct.create!(user_id: 1, charity_id: 2, frequency: "monthly", start_date: 2021-08-01, amount: 25)
