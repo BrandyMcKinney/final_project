@@ -8,9 +8,9 @@
 
 #create some seeds to test app so far!
 
-User.create!(name: "Brandy", email: "Brandy@test.com", password_digest: "")
-User.create!(name: "Brooke", email: "Brooke@test.com", password_digest: "")
-User.create!(name: "Monti", email: "Monti@test.com", password_digest: "")
+User.create!(name: "Brandy", email: "Brandy@test.com", password: "password")
+User.create!(name: "Brooke", email: "Brooke@test.com", password: "password")
+User.create!(name: "Monti", email: "Monti@test.com", password: "password")
 
 Charity.create!(name: "Tirzah International", url: "https://tirzah.org/", address: "8605 Santa Monica Blvd. Suite 55244, Los Angeles, CA 90069", phone_number: "6265379033")
 Charity.create!(name: "Compassion", url: "www.compassion.com", address: "Compassion International, Colorado Springs, CO 80997", phone_number: "8003367676")
@@ -19,7 +19,7 @@ Charity.create!(name: "The Giving", url: "www.test.com", address: "8605 Neighbor
 Charity.create!(name: "The Loving", url: "www.test.com", address: "8606 Corner Store, Los Angeles, CA 90069", phone_number: "9999999992")
 Charity.create!(name: "The Hoping", url: "www.test.com", address: "8607 Block, Los Angeles, CA 90069", phone_number: "7777777773")
 
-# CartedProduct.create!(user_id: 3, charity_id: 2, frequency: "monthly", start_date: 2021-06-30, amount:75)
-# CartedProduct.create!(user_id: 2, charity_id: 4, frequency: "yearly", start_date: 2021-07-01, amount: 500)
-# CartedProduct.create!(user_id: 3, charity_id: 3, frequency: "yearly", start_date: 2021-07-05, amount: 725)
-# CartedProduct.create!(user_id: 1, charity_id: 2, frequency: "monthly", start_date: 2021-08-01, amount: 25)
+CartedProduct.create!(user_id: 1, charity_id: 2, frequency: "monthly", start_date: "2021-06-30", amount: 75)
+CartedProduct.create!(user_id: 2, charity_id: 4, frequency: "yearly", start_date: "2021-07-01", amount: 500)
+CartedProduct.create!(user_id: 3, charity_id: 3, frequency: "yearly", start_date: "2021-07-05", amount: 725)
+CartedProduct.create!(user_id: 1, charity_id: 2, frequency: "monthly", start_date: "2021-08-01", amount: 25)
