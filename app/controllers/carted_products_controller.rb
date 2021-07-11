@@ -16,6 +16,16 @@ class CartedProductsController < ApplicationController
     render json: carted_product
   end
 
+  def notify
+    client = Twilio::REST::Client.new
+    client.messages.create({
+      from: Rails.application.credentials.twilio_phone_number,
+      to: "+14439445966",
+      body: "donation received.",
+    })
+    render json: { message: "you've have been notified." }
+  end
+
   def show
     carted_product = CartedProduct.find(params[:id])
     render json: carted_product

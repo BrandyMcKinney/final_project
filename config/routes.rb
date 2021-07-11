@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   post "/carted_products" => "carted_products#create"
   get "/carted_products" => "carted_products#index"
   get "/carted_products/:id" => "carted_products#show"
+
+  get "/carted_products/notify" => "carted_products#notify"
 end
