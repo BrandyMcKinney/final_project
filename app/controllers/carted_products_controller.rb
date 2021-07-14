@@ -18,7 +18,7 @@ class CartedProductsController < ApplicationController
     client.messages.create(
       from: Rails.application.credentials.twilio_number,
       to: "+14439445966",
-      body: "You will be reminded to donate to #{carted_product.charity.name}",
+      body: "You have successfully donated to #{carted_product.charity.name}",
     )
 
     render json: carted_product
