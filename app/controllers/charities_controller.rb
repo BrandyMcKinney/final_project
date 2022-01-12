@@ -1,3 +1,5 @@
+require "faraday"
+
 class CharitiesController < ApplicationController
   def index
     charities = Charity.all
@@ -12,12 +14,12 @@ class CharitiesController < ApplicationController
       phone_number: params[:phone_number],
     )
     charity.save
-    render json: charity.as_json
+    render json: charity
   end
 
   def show
     charity = Charity.find_by(id: params[:id])
-    render json: charity.as_json
+    render json: charity
   end
 
   # def update
