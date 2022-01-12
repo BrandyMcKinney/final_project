@@ -17,7 +17,7 @@ class CartedProductsController < ApplicationController
     client = Twilio::REST::Client.new
     client.messages.create(
       from: Rails.application.credentials.twilio_number,
-      to: "+14439445966",
+      to: "+9999999999",
       body: "You have successfully donated to #{carted_product.charity.name}",
     )
 
@@ -28,7 +28,7 @@ class CartedProductsController < ApplicationController
     client = Twilio::REST::Client.new
     client.messages.create({
       from: Rails.application.credentials.twilio_number,
-      to: "+14439445966",
+      to: "+9999999999",
       body: "donation received.",
     })
     render json: { message: "you have been notified." }
