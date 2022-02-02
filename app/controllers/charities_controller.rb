@@ -1,6 +1,7 @@
 require "faraday"
 
 class CharitiesController < ApplicationController
+
   def index
     charities = Charity.all
     render json: charities.as_json
