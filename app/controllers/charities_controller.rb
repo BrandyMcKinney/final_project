@@ -1,11 +1,18 @@
-require "faraday"
+
 
 class CharitiesController < ApplicationController
 
+  # def index
+  #   charities = Charity.all
+  #   render json: charities.as_json
+  # end
+
   def index
-    charities = Charity.all
-    render json: charities.as_json
+    response = HTTP.get("https://api.data.charitynavigator.org/v2/Organizations?app_id=e3431d68&app_key=#{Rails.application.credentials.charity_api_key}")
+    data = JSON.parse(response.body)
+    render json: data
   end
+
 
   def create
     charity = Charity.new(
@@ -35,3 +42,7 @@ class CharitiesController < ApplicationController
   #   render json: charity.as_json
   # end
 end
+
+
+#api has been successfully integrated and the api key has been saved.
+#next step is to begin to parse the data. 
