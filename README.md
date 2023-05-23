@@ -1,6 +1,6 @@
 # README
 
-GiveTo is essentially a charity organizer. This is my very first project that I created for my capstone project. It is fully deployed using Heroku and  Netlify and should be functioning. Please note I do continue to use this app as a learning tool on occasion so it may be possible that parts may not be fully functioning. In any case thank you for checking out my app, GiveTo.
+GiveTo is essentially a charity organizer. This is my very first project that I created for my capstone project. It is fully deployed using Heroku and  Netlify. Please note I do continue to use this app as a learning tool on occasion so it may be possible that parts may not be fully functioning. In any case thank you for checking out my app, GiveTo.
 
 What's it all about?
 
@@ -12,5 +12,6 @@ The user also has a fun option of randomly selected a charity that they wish to 
 
 This is a simple app but helpful tool to organize charities.
 
+This was built using Ruby/Ruby on Rails and Postgres to store data.
 
 
