@@ -6,8 +6,9 @@ What does this app do? The user :
 
 * can create an account
 * add charities to a list
-* can scroll through a list of charities, select a charity, and input donation frequency and amount.
-* has a fun option of randomly selected a charity that they wish to donate to.
+* can scroll through a list of charities, select a charity, and input donation frequency and amount
+* has a fun option of randomly selected a charity that they wish to donate to
+* receive a text message when donation has been made
 
 ## Language
 * Ruby
@@ -17,6 +18,7 @@ What does this app do? The user :
 
 ## API
 * [Charity Navigator](https://charity-navigator.stellate.io/)
+* [Twilio SMS](https://www.twilio.com/docs/sms)
 
 ## Tools/Technologies
 * [Heroku](https://www.heroku.com/home)
