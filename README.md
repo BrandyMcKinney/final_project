@@ -1,17 +1,26 @@
 # Charity Organizing App (Backend)
 
-GiveTo is essentially a charity organizer. This is my very first project that I created for my capstone project. It is fully deployed using Heroku and  Netlify. Please note I do continue to use this app as a learning tool on occasion so it may be possible that parts may not be fully functioning. In any case thank you for checking out my app, GiveTo.
+This is my very first project that I built for my capstone project. It is a charity organizer called - GiveTo. The central idea being that many people and organizations are in need of monetary help. This app could potentionally reduce overwhelm for the giver but organizing their chose charities. It would also serve as a memory tool and v2 would include the ability to add to a calendar. This is a simple app but helpful tool to organize charities. It is fully deployed using Heroku. Please note I do continue to use this app as a learning tool on occasion so it may be possible that parts may not be fully functioning. In any case thank you for checking out my app, GiveTo.
 
-What's it all about?
+What does this app do? The user :
 
-The user is able to create an account and maintain a list of charities they may wish to donate to. The idea being that many people/organizations are in need of help and this app could potentionally reduce overwhelm for the giver. It would also serve as a memory tool.  
+* can create an account
+* add charities to a list
+* can scroll through a list of charities, select a charity, and input donation frequency and amount.
+* has a fun option of randomly selected a charity that they wish to donate to.
 
-The user can scroll through a list of charities, select a charity, and input donation frequency and amount.
+## Language
+* Ruby
 
-The user also has a fun option of randomly selected a charity that they wish to donate to.
+## Framework
+* [Rails](https://rubyonrails.org/)
 
-This is a simple app but helpful tool to organize charities.
+## API
+* [Charity Navigator](https://charity-navigator.stellate.io/)
 
-This was built using Ruby/Ruby on Rails and Postgres to store data.
+## Tools/Technologies
+* [Heroku](https://www.heroku.com/home)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Insomnia](https://insomnia.rest/)
 
 
